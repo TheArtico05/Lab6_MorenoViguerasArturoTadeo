@@ -17,15 +17,15 @@ export default function Footer(){
                     </div>
                     
                     <div className={styles.footer__social}>
-                        <Link href="https://linkedin.com/in/tu-perfil" className={styles["footer__social-link"]} aria-label="LinkedIn">
+                        <a href="https://linkedin.com/in/tu-perfil" target="_blank" rel="noopener noreferrer" className={styles["footer__social-link"]} aria-label="LinkedIn">
                             <i className="fa-brands fa-linkedin-in"></i>
-                        </Link>
-                        <Link href="https://github.com/tu-usuario" className={styles["footer__social-link"]} aria-label="GitHub">
+                        </a>
+                        <a href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer" className={styles["footer__social-link"]} aria-label="GitHub">
                             <i className="fa-brands fa-github"></i>
-                        </Link>
-                        <Link href="mailto:tu@email.com" className={styles["footer__social-link"]} aria-label="Email">
+                        </a>
+                        <a href="mailto:tu@email.com" className={styles["footer__social-link"]} aria-label="Email">
                             <i className="fa-solid fa-envelope"></i>
-                        </Link>
+                        </a>
                     </div>
                 </div>
                 

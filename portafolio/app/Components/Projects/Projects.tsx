@@ -4,8 +4,9 @@ import Link from 'next/link';
 
 export default function Projects(){
     return(
-        <>     <section className={styles.projects + " section"} id="projects">
+        <section className={styles.projects + ' section'} id="projects">
             <div className="container">
+                
                 <div className="section__header">
                     <span className="section__subtitle">Mi trabajo</span>
                     <h2 className="section__title">Proyectos Destacados</h2>
@@ -15,18 +16,18 @@ export default function Projects(){
                 </div>
                 
                 <div className={styles.projects__grid}>
-
+                    
                     <article className={styles.project__card}>
                         <div className={styles.project__image}>
                             <div className={styles.project__placeholder}>
-                                <i className="fas fa-laptop-code"></i>
+                                <i className="fa-solid fa-laptop-code"></i>
                             </div>
                             <div className={styles.project__overlay}>
-                                <Link href="#" target="_blank" rel="noopener noreferrer" className={styles.project__link}>
-                                    <i className="fas fa-external-link-alt"></i>
+                                <Link href="#" className={styles.project__link}>
+                                    <i className="fa-solid fa-external-link-alt"></i>
                                 </Link>
-                                <Link href="https://github.com/tu-usuario/proyecto-1" target="_blank" rel="noopener noreferrer" className={styles.project__link}>
-                                    <i className="fab fa-github"></i>
+                                <Link href="https://github.com/tu-usuario/proyecto-1" className={styles.project__link}>
+                                    <i className="fa-brands fa-github"></i>
                                 </Link>
                             </div>
                         </div>
@@ -43,18 +44,18 @@ export default function Projects(){
                             </div>
                         </div>
                     </article>
-
+                    
                     <article className={styles.project__card}>
                         <div className={styles.project__image}>
                             <div className={styles.project__placeholder}>
-                                <i className="fas fa-chart-line"></i>
+                                <i className="fa-solid fa-chart-line"></i>
                             </div>
                             <div className={styles.project__overlay}>
-                                <Link href="#" target="_blank" rel="noopener noreferrer" className={styles.project__link}>
-                                    <i className="fas fa-external-link-alt"></i>
+                                <Link href="#" className={styles.project__link}>
+                                    <i className="fa-solid fa-external-link-alt"></i>
                                 </Link>
-                                <Link href="https://github.com/tu-usuario/proyecto-2" target="_blank" rel="noopener noreferrer" className={styles.project__link}>
-                                    <i className="fab fa-github"></i>
+                                <Link href="https://github.com/tu-usuario/proyecto-2" className={styles.project__link}>
+                                    <i className="fa-brands fa-github"></i>
                                 </Link>
                             </div>
                         </div>
@@ -65,7 +66,6 @@ export default function Projects(){
                                 con gráficos dinámicos y reportes automatizados.
                             </p>
                             <div className={styles.project__tech}>
-                
                                 <span className={styles.tech}>Python</span>
                                 <span className={styles.tech}>Django</span>
                                 <span className={styles.tech}>Chart.js</span>
@@ -73,18 +73,17 @@ export default function Projects(){
                         </div>
                     </article>
                     
-
                     <article className={styles.project__card}>
                         <div className={styles.project__image}>
                             <div className={styles.project__placeholder}>
-                                <i className="fas fa-robot"></i>
+                                <i className="fa-solid fa-robot"></i>
                             </div>
                             <div className={styles.project__overlay}>
-                                <Link href="#" target="_blank" rel="noopener noreferrer" className={styles.project__link}>
-                                    <i className="fas fa-external-link-alt"></i>
+                                <Link href="#" className={styles.project__link}>
+                                    <i className="fa-solid fa-external-link-alt"></i>
                                 </Link>
-                                <Link href="https://github.com/tu-usuario/proyecto-3" target="_blank" rel="noopener noreferrer" className={styles.project__link}>
-                                    <i className="fab fa-github"></i>
+                                <Link href="https://github.com/tu-usuario/proyecto-3" className={styles.project__link}>
+                                    <i className="fa-brands fa-github"></i>
                                 </Link>
                             </div>
                         </div>
@@ -101,14 +100,16 @@ export default function Projects(){
                             </div>
                         </div>
                     </article>
+
                 </div>
                 
                 <div className={styles.projects__more}>
-                    <Link href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer" className={styles.btn + " " + styles["btn--outline"]}>
-                        <i className="fab fa-github"></i> Ver más en GitHub
+                    <Link href="https://github.com/tu-usuario" className="btn btn--outline">
+                        <i className="fa-brands fa-github"></i> Ver más en GitHub
                     </Link>
                 </div>
+
             </div>
-        </section> </>
+        </section>
     );
 }

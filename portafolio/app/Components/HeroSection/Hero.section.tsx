@@ -5,7 +5,7 @@ import Link from 'next/link';
 export default function HeroSection(){
     return(
         <>
-            <section className={styles.heroSection} id="home">
+            <section className={styles.hero} id="home">
                 <div className={'container' + ' ' + styles.hero__container}>
                     
                     <div className={styles.hero__content}>
@@ -29,11 +29,11 @@ export default function HeroSection(){
                         
                         <div className={styles.hero__buttons}>
                             <Link href="#projects" className={styles.btn + ' ' + styles['btn--outline']}>
-                                <i className="fas fa-rocket"></i> Ver mis proyectos
+                                <i className="fa-solid fa-rocket"></i> Ver mis proyectos
                             </Link>
                             
                             <Link href="#contact" className={styles.btn + ' ' + styles['btn--outline']}>
-                                <i className="fas fa-envelope"></i> Contáctame
+                                <i className="fa-solid fa-envelope"></i> Contáctame
                             </Link>
                         </div>
                     </div>
@@ -41,7 +41,7 @@ export default function HeroSection(){
                     <div className={styles.hero__image}>
                         <div className={styles.hero__blob}>
                             <div className={styles.hero__avatar}>
-                                <i className="fas fa-user-astronaut"></i>
+                                <i className="fa-solid fa-user-astronaut"></i>
                             </div>
                         </div>
                         
@@ -52,9 +52,9 @@ export default function HeroSection(){
                 </div>
                 
                 <div className={styles.hero__scroll}>
-                    <Link href="#interests" className={styles.hero__scrollLink}>
+                    <Link href="#interests" className={styles["hero__scroll-link"]}>
                         <span>Scroll</span>
-                        <i className="fas fa-chevron-down"></i>
+                        <i className="fa-solid fa-chevron-down"></i>
                     </Link>
                 </div>
             </section>

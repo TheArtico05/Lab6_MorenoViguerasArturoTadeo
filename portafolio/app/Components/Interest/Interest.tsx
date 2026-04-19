@@ -1,23 +1,23 @@
 import React from 'react';
 import styles from './Interest.module.css';
-import Link from 'next/link';
 
 export default function Interest(){
     return(
-        <><section className={styles.interests} id="interests">
+        <section className={styles.interests + ' section'} id="interests">
             <div className="container">
-                <div className={styles.section__header}>
-                    <span className={styles.section__subtitle}>Lo que me apasiona</span>
-                    <h2 className={styles.section__title}>Intereses & Especialidades</h2>
-                    <p className={styles.section__description}>
+                <div className="section__header">
+                    <span className="section__subtitle">Lo que me apasiona</span>
+                    <h2 className="section__title">Intereses & Especialidades</h2>
+                    <p className="section__description">
                         Áreas tecnológicas que me entusiasman y en las que busco especializarme
                     </p>
                 </div>
-
+                
                 <div className={styles.interests__grid}>
+                    
                     <article className={styles.interest__card}>
                         <div className={styles.card__icon}>
-                            <i className="fas fa-globe"></i>
+                            <i className="fa-solid fa-globe"></i>
                         </div>
                         <h3 className={styles.card__title}>Desarrollo Web</h3>
                         <p className={styles.card__description}>
@@ -31,10 +31,9 @@ export default function Interest(){
                         </div>
                     </article>
                     
-                 
                     <article className={styles.interest__card}>
                         <div className={styles.card__icon}>
-                            <i className="fas fa-shield-halved"></i>
+                            <i className="fa-solid fa-shield-halved"></i>
                         </div>
                         <h3 className={styles.card__title}>Ciberseguridad</h3>
                         <p className={styles.card__description}>
@@ -50,7 +49,7 @@ export default function Interest(){
                     
                     <article className={styles.interest__card}>
                         <div className={styles.card__icon}>
-                            <i className="fas fa-brain"></i>
+                            <i className="fa-solid fa-brain"></i>
                         </div>
                         <h3 className={styles.card__title}>Inteligencia Artificial</h3>
                         <p className={styles.card__description}>
@@ -66,7 +65,7 @@ export default function Interest(){
                     
                     <article className={styles.interest__card}>
                         <div className={styles.card__icon}>
-                            <i className="fas fa-database"></i>
+                            <i className="fa-solid fa-database"></i>
                         </div>
                         <h3 className={styles.card__title}>Bases de Datos</h3>
                         <p className={styles.card__description}>
@@ -79,10 +78,10 @@ export default function Interest(){
                             <span className={styles.tag}>MongoDB</span>
                         </div>
                     </article>
-      
+                    
                     <article className={styles.interest__card}>
                         <div className={styles.card__icon}>
-                            <i className="fas fa-mobile-screen-button"></i>
+                            <i className="fa-solid fa-mobile-screen-button"></i>
                         </div>
                         <h3 className={styles.card__title}>Desarrollo Móvil</h3>
                         <p className={styles.card__description}>
@@ -98,7 +97,7 @@ export default function Interest(){
                     
                     <article className={styles.interest__card}>
                         <div className={styles.card__icon}>
-                            <i className="fas fa-cloud"></i>
+                            <i className="fa-solid fa-cloud"></i>
                         </div>
                         <h3 className={styles.card__title}>Cloud Computing</h3>
                         <p className={styles.card__description}>
@@ -115,7 +114,7 @@ export default function Interest(){
                 
                 <div className={styles.subjects}>
                     <h3 className={styles.subjects__title}>
-                        <i className="fas fa-graduation-cap"></i> Materias Relevantes
+                        <i className="fa-solid fa-graduation-cap"></i> Materias Relevantes
                     </h3>
                     <div className={styles.subjects__list}>
                         <span className={styles.subject}>Programación Orientada a Objetos</span>
@@ -129,6 +128,6 @@ export default function Interest(){
                     </div>
                 </div>
             </div>
-        </section> </>
+        </section>
     );
 }
