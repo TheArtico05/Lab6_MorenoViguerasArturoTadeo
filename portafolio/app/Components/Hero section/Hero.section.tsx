@@ -1,0 +1,429 @@
+ <main class="main">
+        <!-- ========== HERO SECTION ========== -->
+        <section class="hero section" id="home">
+            <div class="hero__container container">
+                <div class="hero__content">
+                    <span class="hero__greeting">¡Hola! 👋 Soy</span>
+                    <h1 class="hero__title">Arturo Tadeo Moreno Vigueras</h1>
+                    <h2 class="hero__subtitle">
+                        <span class="highlight">Analista de datos </span> en Crecimiento
+                    </h2>
+                    <p class="hero__description">
+                        Actualmente estoy cursando la carrera de Matematicas Aplicadas y computación en la Fes Acatlan
+                        en donde estoy aprendiendo habilidades en estadistica, finansas, bases de datos
+                        , programacion y finansas.
+                    </p>
+                    <!-- ERROR 1: El botón "Ver mis proyectos" no tiene estilos de botón primario
+                         PISTA: Revisa las clases del botón, falta una clase -->
+                    <div class="hero__buttons">
+                        <a href="#projects" class="btn btn--outline">
+                            <i class="fas fa-rocket"></i> Ver mis proyectos
+                        </a>
+                        <!-- ERROR 2: El enlace no lleva a la sección correcta
+                             PISTA: El ID de la sección de contacto es "contact", verifica el href -->
+                        <a href="#contact" class="btn btn--outline">
+                            <i class="fas fa-envelope"></i> Contáctame
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero__image">
+                    <div class="hero__blob">
+                        <div class="hero__avatar">
+                            <i class="fas fa-user-astronaut"></i>
+                        </div>
+                    </div>
+                    <div class="hero__decoration hero__decoration--1"></div>
+                    <div class="hero__decoration hero__decoration--2"></div>
+                    <div class="hero__decoration hero__decoration--3"></div>
+                </div>
+            </div>
+            
+            <div class="hero__scroll">
+                <a href="#interests" class="hero__scroll-link">
+                    <span>Scroll</span>
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- ========== INTERESTS & SUBJECTS SECTION ========== -->
+        <section class="interests section" id="interests">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">Lo que me apasiona</span>
+                    <h2 class="section__title">Intereses & Especialidades</h2>
+                    <p class="section__description">
+                        Áreas tecnológicas que me entusiasman y en las que busco especializarme
+                    </p>
+                </div>
+                
+                <div class="interests__grid">
+                    <!-- Card 1 -->
+                    <!-- ERROR 3: Esta card no tiene el icono visible
+                         PISTA: Revisa el contenido del div card__icon, falta el elemento del icono -->
+                    <article class="interest__card">
+                        <div class="card__icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3 class="card__title">Desarrollo Web</h3>
+                        <p class="card__description">
+                            Creación de aplicaciones web modernas con tecnologías como 
+                            HTML5, CSS3, JavaScript y frameworks actuales.
+                        </p>
+                        <div class="card__tags">
+                            <span class="tag">HTML/CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">React</span>
+                        </div>
+                    </article>
+                    
+                    <!-- Card 2 -->
+                    <!-- ERROR 4: Esta card no tiene los estilos de tarjeta aplicados
+                         PISTA: El nombre de la clase está mal escrito, revisa la ortografía de "interest" -->
+                    <article class="interest__card">
+                        <div class="card__icon">
+                            <i class="fas fa-shield-halved"></i>
+                        </div>
+                        <h3 class="card__title">Ciberseguridad</h3>
+                        <p class="card__description">
+                            Protección de sistemas y datos, análisis de vulnerabilidades 
+                            y mejores prácticas de seguridad informática.
+                        </p>
+                        <div class="card__tags">
+                            <span class="tag">Seguridad Web</span>
+                            <span class="tag">Pentesting</span>
+                            <span class="tag">Redes</span>
+                        </div>
+                    </article>
+                    
+                    <!-- Card 3 -->
+                    <article class="interest__card">
+                        <div class="card__icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3 class="card__title">Inteligencia Artificial</h3>
+                        <p class="card__description">
+                            Machine Learning, procesamiento de datos y desarrollo de 
+                            soluciones inteligentes con Python.
+                        </p>
+                        <div class="card__tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">ML</span>
+                            <span class="tag">Data Science</span>
+                        </div>
+                    </article>
+                    
+                    <!-- Card 4 -->
+                    <article class="interest__card">
+                        <div class="card__icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3 class="card__title">Bases de Datos</h3>
+                        <p class="card__description">
+                            Diseño, administración y optimización de bases de datos 
+                            relacionales y NoSQL.
+                        </p>
+                        <div class="card__tags">
+                            <span class="tag">MySQL</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                    </article>
+                    
+                    <!-- Card 5 -->
+                    <article class="interest__card">
+                        <div class="card__icon">
+                            <i class="fas fa-mobile-screen-button"></i>
+                        </div>
+                        <h3 class="card__title">Desarrollo Móvil</h3>
+                        <p class="card__description">
+                            Creación de aplicaciones móviles nativas y multiplataforma 
+                            para Android e iOS.
+                        </p>
+                        <div class="card__tags">
+                            <span class="tag">Flutter</span>
+                            <span class="tag">React Native</span>
+                            <span class="tag">Kotlin</span>
+                        </div>
+                    </article>
+                    
+                    <!-- Card 6 -->
+                    <article class="interest__card">
+                        <div class="card__icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h3 class="card__title">Cloud Computing</h3>
+                        <p class="card__description">
+                            Servicios en la nube, arquitecturas escalables y 
+                            despliegue de aplicaciones.
+                        </p>
+                        <div class="card__tags">
+                            <span class="tag">AWS</span>
+                            <span class="tag">Azure</span>
+                            <span class="tag">Docker</span>
+                        </div>
+                    </article>
+                </div>
+                
+                <!-- Relevant Subjects -->
+                <div class="subjects">
+                    <h3 class="subjects__title">
+                        <i class="fas fa-graduation-cap"></i> Materias Relevantes
+                    </h3>
+                    <div class="subjects__list">
+                        <span class="subject">Programación Orientada a Objetos</span>
+                        <span class="subject">Estructuras de Datos</span>
+                        <span class="subject">Algoritmos</span>
+                        <span class="subject">Redes de Computadoras</span>
+                        <span class="subject">Ingeniería de Software</span>
+                        <span class="subject">Bases de Datos</span>
+                        <span class="subject">Sistemas Operativos</span>
+                        <span class="subject">Desarrollo Web</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== CV SECTION ========== -->
+        <section class="cv section" id="cv">
+            <div class="container">
+                <div class="cv__content">
+                    <div class="cv__info">
+                        <span class="section__subtitle">Conoce mi trayectoria</span>
+                        <h2 class="section__title">Mi Currículum</h2>
+                        <p class="cv__description">
+                            Descarga mi CV para conocer mi formación académica, habilidades 
+                            técnicas y experiencia. También puedes conectar conmigo en mis 
+                            redes profesionales.
+                        </p>
+                        
+                        <div class="cv__buttons">
+                            <a href="https://www.overleaf.com/gallery/tagged/cv" class="btn btn--primary btn--large">
+                                <i class="fas fa-download"></i> Descargar CV
+                            </a>
+                            <a href="#" class="btn btn--secondary btn--large">
+                                <i class="fas fa-eye"></i> Ver CV Digital
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="cv__social">
+                        <h3 class="cv__social-title">Conectemos</h3>
+                        <div class="cv__social-links">
+                            <a href="https://linkedin.com/in/tu-perfil" target="_blank" rel="noopener noreferrer" class="social__card">
+                                <div class="social__icon social__icon--linkedin">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </div>
+                                <div class="social__info">
+                                    <span class="social__name">LinkedIn</span>
+                                    <span class="social__user">@tu-perfil</span>
+                                </div>
+                                <i class="fas fa-arrow-right social__arrow"></i>
+                            </a>
+                            
+                            <a href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer" class="social__card">
+                                <div class="social__icon social__icon--github">
+                                    <i class="fab fa-github"></i>
+                                </div>
+                                <div class="social__info">
+                                    <span class="social__name">GitHub</span>
+                                    <span class="social__user">@tu-usuario</span>
+                                </div>
+                                <i class="fas fa-arrow-right social__arrow"></i>
+                            </a>
+                            
+                            <a href="mailto:tu@email.com" class="social__card">
+                                <div class="social__icon social__icon--email">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="social__info">
+                                    <span class="social__name">Email</span>
+                                    <span class="social__user">tu@email.com</span>
+                                </div>
+                                <i class="fas fa-arrow-right social__arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== PROJECTS SECTION ========== -->
+        <!-- ERROR 5: Esta sección no tiene el contenido centrado ni con el ancho máximo
+             PISTA: Falta una clase importante en el div que envuelve el contenido -->
+        <section class="projects section" id="projects">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">Mi trabajo</span>
+                    <h2 class="section__title">Proyectos Destacados</h2>
+                    <p class="section__description">
+                        Una selección de proyectos que demuestran mis habilidades y pasión por el desarrollo
+                    </p>
+                </div>
+                
+                <div class="projects__grid">
+                    <!-- Project 1 -->
+                    <article class="project__card">
+                        <div class="project__image">
+                            <div class="project__placeholder">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <div class="project__overlay">
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="project__link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/tu-usuario/proyecto-1" target="_blank" rel="noopener noreferrer" class="project__link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project__content">
+                            <h3 class="project__title">E-Commerce Platform</h3>
+                            <p class="project__description">
+                                Plataforma de comercio electrónico con carrito de compras, 
+                                autenticación de usuarios y pasarela de pagos integrada.
+                            </p>
+                            <div class="project__tech">
+                                <span class="tech">React</span>
+                                <span class="tech">Node.js</span>
+                                <span class="tech">MongoDB</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Project 2 -->
+                    <!-- ERROR 6: Esta tarjeta de proyecto no tiene los estilos de card
+                         PISTA: Falta la clase que identifica a este elemento como tarjeta de proyecto -->
+                    <article class="project__card">
+                        <div class="project__image">
+                            <div class="project__placeholder">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="project__overlay">
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="project__link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/tu-usuario/proyecto-2" target="_blank" rel="noopener noreferrer" class="project__link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project__content">
+                            <h3 class="project__title">Dashboard Analytics</h3>
+                            <p class="project__description">
+                                Panel de control interactivo para visualización de datos 
+                                con gráficos dinámicos y reportes automatizados.
+                            </p>
+                            <div class="project__tech">
+                                <!-- ERROR 7: Estos tags de tecnología no tienen el estilo correcto
+                                     PISTA: Revisa la clase de los spans, debería ser "tech" -->
+                                <span class="tech">Python</span>
+                                <span class="tech">Django</span>
+                                <span class="tech">Chart.js</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Project 3 -->
+                    <article class="project__card">
+                        <div class="project__image">
+                            <div class="project__placeholder">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="project__overlay">
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="project__link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/tu-usuario/proyecto-3" target="_blank" rel="noopener noreferrer" class="project__link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project__content">
+                            <h3 class="project__title">AI Chatbot Assistant</h3>
+                            <p class="project__description">
+                                Asistente virtual inteligente con procesamiento de lenguaje 
+                                natural y respuestas contextuales.
+                            </p>
+                            <div class="project__tech">
+                                <span class="tech">Python</span>
+                                <span class="tech">TensorFlow</span>
+                                <span class="tech">Flask</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="projects__more">
+                    <a href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer" class="btn btn--outline">
+                        <i class="fab fa-github"></i> Ver más en GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== CONTACT SECTION ========== -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="contact__content">
+                    <div class="contact__info">
+                        <span class="section__subtitle">¿Tienes un proyecto?</span>
+                        <h2 class="section__title">¡Hablemos!</h2>
+                        <p class="contact__description">
+                            Estoy disponible para oportunidades laborales, proyectos freelance 
+                            o simplemente para conectar. ¡No dudes en contactarme!
+                        </p>
+                        
+                        <div class="contact__data">
+                            <div class="contact__item">
+                                <div class="contact__icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact__text">
+                                    <span class="contact__label">Email</span>
+                                    <a href="mailto:tu@email.com" class="contact__value">tu@email.com</a>
+                                </div>
+                            </div>
+                            
+                            <!-- ERROR 8: Este icono de ubicación no se muestra correctamente
+                                 PISTA: La clase del icono está incompleta, revisa el nombre del icono de Font Awesome -->
+                            <div class="contact__item">
+                                <div class="contact__icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact__text">
+                                    <span class="contact__label">Ubicación</span>
+                                    <span class="contact__value">Ciudad, País</span>
+                                </div>
+                            </div>
+                            
+                    <!-- ERROR 9: El texto "Disponible para trabajar" no tiene el estilo verde
+                         PISTA: Falta el modificador de clase que indica disponibilidad -->
+                            <div class="contact__item">
+                                <div class="contact__icon">
+                                    <i class="fas fa-briefcase"></i>
+                                </div>
+                                <div class="contact__text">
+                                    <span class="contact__label">Disponibilidad</span>
+                                    <span class="contact__value--available">Disponible para trabajar</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact__cta">
+                        <div class="contact__card">
+                            <h3 class="contact__card-title">¿Listo para comenzar?</h3>
+                            <p class="contact__card-text">
+                                Envíame un mensaje y te responderé lo antes posible.
+                            </p>
+                            <a href="mailto:tu@email.com" class="btn btn--primary btn--large btn--full">
+                                <i class="fas fa-paper-plane"></i> Enviar mensaje
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
